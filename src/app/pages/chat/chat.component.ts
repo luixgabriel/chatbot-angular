@@ -15,13 +15,14 @@ import { ChatDialogComponent } from '../../components/chat-dialog/chat-dialog.co
 })
 export class ChatComponent {
 
-  questions: IMessage[] = []
+  messages: IMessage[] = []
 
   sendSuggestedQuestion(question: string){
-    this.questions.push({
+    this.messages.push({
       type: 'request',
       message: question
     })
+    console.log(this.messages[0])
   }
 
 }
