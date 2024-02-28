@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-curiosity',
+  selector: 'icon-curiosity',
   standalone: true,
   imports: [],
   templateUrl: './curiosity.component.html',

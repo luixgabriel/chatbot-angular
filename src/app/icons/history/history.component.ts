@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-history',
+  selector: 'icon-history',
   standalone: true,
   imports: [],
   templateUrl: './history.component.html',

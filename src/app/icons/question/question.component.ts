@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-question',
+  selector: 'icon-question',
   standalone: true,
   imports: [],
   templateUrl: './question.component.html',
