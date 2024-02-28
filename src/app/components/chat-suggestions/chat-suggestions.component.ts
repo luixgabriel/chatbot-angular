@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { HistoryComponent } from '../../icons/history/history.component';
 import { QuestionComponent } from '../../icons/question/question.component';
 import { CuriosityComponent } from '../../icons/curiosity/curiosity.component';
@@ -12,6 +12,9 @@ import { CuriosityComponent } from '../../icons/curiosity/curiosity.component';
   styleUrl: './chat-suggestions.component.scss'
 })
 export class ChatSuggestionsComponent {
+
+  // crio a função para emitir o evento e coloco o tipo dele aqui tbm
+  @Output() questionSelected = new EventEmitter<string>()
 
   suggestionTopics = [
     {
@@ -41,5 +44,9 @@ export class ChatSuggestionsComponent {
       ]
     },
   ]
+
+  selectQuestion(question: string){
+    this.questionSelected.emit(question)
+  }
 
 }
