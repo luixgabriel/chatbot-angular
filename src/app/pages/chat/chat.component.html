@@ -15,5 +15,6 @@
     (questionSelected)="sendSuggestedQuestion($event)"
     *ngIf="questions.length === 0">
     </app-chat-suggestions>
+    <chat-dialog [messages]="questions"></chat-dialog>
   </section>
 </main>
