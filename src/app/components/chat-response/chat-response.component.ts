@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { IMessage } from '../../interfaces/message';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'chat-response',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './chat-response.component.html',
   styleUrl: './chat-response.component.scss'
 })

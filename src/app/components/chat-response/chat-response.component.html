@@ -1,5 +1,6 @@
-<div>
-  <h1>oi</h1>
-  <span>{{message.message}}</span>
-  <button (click)="showMessage()">Clicar</button>
+<div class="baloon-wrapper">
+  <div class="baloon" [ngClass]="message.type">
+    <p>{{message.message}}</p>
+  </div>
 </div>
+
